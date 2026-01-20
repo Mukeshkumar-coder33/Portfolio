@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Portfolio.css">
+    </head>
+    <body>
+
+       <nav class="navbar">
+  <div class="nav-brand">
+    Mukesh <span>Portfolio</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+    <a href="#admin-login">Admin</a>
+  </div>
+</nav>
+
+        <section class="hero">
+    <p class="greeting">HELLO,I'm</p>
+    <h1>MUKESH KUMAR</h1>
+    <h3>Full Stack Web Developer</h3>
+    <p class="tagline">I design and build modern user-friendly web applications</p>
+   
+    <div class="hero-buttons">
+ <a href="#projects" class="btn primary">
+  View Projects
+</a>
+
+  <a href="MukeshKumar_InternshalaResume.pdf" download class="btn secondary">
+  Download Resume
+</a>
+
+</div>
+
+     </section>
+
+        <button id="Toggle">Toggle Theme</button>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="edu-item">   
+            <h3>Bachelor of Technology in Information Technology</h3>
+            <p>Sri Shakthi Institute of Engineering and Technology, Coimbatore</p>
+            <p>2023 - 2027 | CGPA: 7.6</p>
+            <h3>Higher Secondary Education,SSVM</h3>
+            <p>Percentage: 7.6</p>
+        </div>
+        </section>
+        <hr>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js, Node.js, Express.js</li>
+                <li>MongoDB</li>
+                <li>Java</li>
+                <li>Git, GitHub</li>
+                <li>Problem Solving and Algorithms</li>
+            </ul>
+        </section>
+          <hr>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Portfolio Website</h3>
+                
+                <ul>
+                <li>A personal portfolio website to showcase my skills, projects, and achievements.<br><br>
+                Technology Used:Html,CSS,JavaScript</li></ul>
+                <br><br>
+                <h3>Todo List</h3>
+            
+                <ul>
+                <li>Todo List Application (MERN Stack)
+
+Built a full-stack Todo List application using MongoDB, Express, React, and Node.js
+
+Implemented CRUD operations (add, update, delete, cancel todos)
+
+Integrated MongoDB Atlas for cloud database
+
+Deployed frontend on Vercel and backend on Render
+
+Designed RESTful APIs for data handling
+                <br><br>Technology Used:React js,Express js,Node js,Postman,Mangodb,Bootstrap,versel,render</li></ul>
+                <br><br><h3>Eventify</h3><ul>
+                <li>A web application to manage both public and private events.The rspv is used to count no.of people attending the event.
+                <br><br>Technology Used:React js,Express js,Node js,Postman,Mangodb,Bootstrap</li></ul>
+                <br><br><h3>Bus Reservation-Java</h3>
+                <ul>
+                <li>A application is used to book,view,cancel the ticket in the bus.
+            <br><br>Technology Used:Java,Oops,MySql</li></ul>
+            </div>
+        </section>
+         <hr>
+        <section id="certificates" class="section"> 
+            <h2>Certificates</h2>
+         
+            <ul>
+                <li>Web Development - Pursuit Future Technology</li>
+                <li>Intern in Web Development - Pursuit Future Technology</li>
+                <li>Excellence perfomance in intern- Pursuit Future Technology</li>
+            </ul>
+        </section>
+         <hr>
+        <section id="achievements" class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Winner of School Coding Competition 2024</li>
+                <li>Participant in College Coding Competition 2023</li>
+            </ul>
+        </section> 
+        <hr>
+        <section id="hobbies" class="section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Coding and Problem Solving</li>
+                <li>Reading Tech Blogs</li>
+                <li>Playing Cricket</li>
+                <li>Reading Books</li>
+            </ul>
+        </section> 
+        <hr>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: mk3304413@gmail.com</p>
+            <p>Phone: +91 6374720281</p>
+            <p>LinkedIn: linkedin.com/in/mukesh-kumar-3304413</p>
+            <p>GitHub: github.com/mukeshkumar3304413</p>
+            </section>
+         <hr>
+        <section id="admin-login" class="section">
+            <h2>Admin Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+       <script>
+  const toggleBtn = document.getElementById("Toggle");
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "☀️ Light";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️ Light";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙 Dark";
+    }
+  });
+</script>
+
+    </body>
+</html>
